@@ -1,0 +1,7 @@
+<h1>飲みにケーション アプリ(仮)</h1>
+
+<ul>
+  <li *ngFor="let item of (items | async)">
+    name: {{ item.name }} / age: {{ item.age }}
+  </li>
+</ul>
