@@ -9,10 +9,16 @@ import { environment } from "../environments/environment";
 
 import { AppComponent } from "./app.component";
 import { SlidetoggleComponent } from "./slidetoggle/slidetoggle.component";
-import { Auth } from "./auth/auth.component";
+import { AuthComponent } from "./auth/auth.component";
+import { Put_tableComponent } from "./put_table/put_table.component";
 
 @NgModule({
-  declarations: [AppComponent, SlidetoggleComponent, Auth],
+  declarations: [
+    AppComponent,
+    SlidetoggleComponent,
+    AuthComponent,
+    Put_tableComponent
+  ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),

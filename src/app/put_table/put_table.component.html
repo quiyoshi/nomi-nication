@@ -1,0 +1,14 @@
+<h2>表を出力</h2>
+
+<table>
+  <tr>
+    <th>icon</th>
+    <th>name</th>
+    <th>email</th>
+  </tr>
+  <tr *ngFor="let item of (items | async)">
+    <td>{{ item.photoURL }}</td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.email }}</td>
+  </tr>
+</table>

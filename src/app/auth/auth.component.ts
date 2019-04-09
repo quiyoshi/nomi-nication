@@ -4,4 +4,4 @@ import { Component } from "@angular/core";
   selector: "auth",
   templateUrl: "./auth.component.html"
 })
-export class Auth {}
+export class AuthComponent {}
