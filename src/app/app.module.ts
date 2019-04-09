@@ -5,14 +5,15 @@ import { AngularFirestore } from "@angular/fire/firestore";
 import { environment } from "../environments/environment";
 
 import { AppComponent } from "./app.component";
+import { SlidetoggleComponent } from "./slidetoggle/slidetoggle.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SlidetoggleComponent],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [AngularFirestore],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, SlidetoggleComponent]
 })
 export class AppModule {}
