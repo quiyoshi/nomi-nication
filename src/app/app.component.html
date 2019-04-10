@@ -1,5 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">ソクノミ！</a>
+
+  <div class="btn" *ngIf="show; else elseLogin">
+    <button type="submit" class="btn btn-primary">ログイン</button>
+    <button class="btn btn-primary">新規登録</button>
+  </div>
+  <ng-template #elseLogin>
+    <div class="btn">
+      <button class="btn-primary">ログアウト</button>
+    </div>
+  </ng-template>
 </nav>
 
 <auth></auth>
