@@ -8,7 +8,10 @@
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "prefix": "app",
-      "styles": ["styles.css"],
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "styles.css"
+      ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {

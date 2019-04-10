@@ -1,7 +1,6 @@
 <h2>認証</h2>
 
 <!--<button [routerLink]="['/signup']">新規登録</button>-->
-<button>新規登録</button>
 
 <!--
 <form [formGroup]="loginForm" (ngSubmit)="login()">
@@ -12,10 +11,25 @@
   <button type="submit" class="button">ログイン</button>
 </form>
 -->
+
 <form>
-  <label for="email">Email</label>
-  <input type="email" class="input" formControlName="email" required />
-  <label for="password">Password</label>
-  <input type="password" class="input" formControlName="password" required />
-  <button type="submit" class="button">ログイン</button>
+  <div class="form-group">
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      placeholder="メールアドレス"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputPassword1"
+      placeholder="パスワード"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">ログイン</button>
+  <button class="btn btn-primary">新規登録</button>
 </form>

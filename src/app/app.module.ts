@@ -4,6 +4,8 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { AngularFireDatabaseModule } from "@angular/fire/database";
 import { AngularFireAuthModule } from "@angular/fire/auth";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { environment } from "../environments/environment";
 
@@ -23,7 +25,9 @@ import { Put_tableComponent } from "./put_table/put_table.component";
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
