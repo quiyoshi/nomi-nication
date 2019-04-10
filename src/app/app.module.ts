@@ -13,13 +13,15 @@ import { AppComponent } from "./app.component";
 import { SlidetoggleComponent } from "./slidetoggle/slidetoggle.component";
 import { AuthComponent } from "./auth/auth.component";
 import { Put_tableComponent } from "./put_table/put_table.component";
+import { DummyComponent } from "./dummy/dummy.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     SlidetoggleComponent,
     AuthComponent,
-    Put_tableComponent
+    Put_tableComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,
